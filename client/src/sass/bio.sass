@@ -1,0 +1,210 @@
+.bio
+    padding-top: 30px
+    margin-bottom: 50px
+    .header
+        d: flex
+        jc: space-between
+
+        &__
+            &left-side
+                w: 30%
+                pl: 10px
+
+                +mq-sm
+                    pl: 25px
+                
+                +mq-md
+                    pl: 45px
+
+                +mq-lg
+                    pl: 70px
+
+
+            &avatar-wrapper
+                w: 75px
+                h: 75px
+                br-radius: 50%
+                overflow: hidden
+
+                +mq-sm
+                    w: 120px
+                    h: 120px
+
+                +mq-lg
+                    w: 152px
+                    h: 152px
+
+            &right-side
+                w: 70%
+
+                .top-info
+                    d: flex
+                    flex-direction: column
+
+                    +mq-md
+                        flex-direction: row
+                        ai: center
+
+                    &__
+                        &nickname
+                            mr: 10px
+                    
+                    .actions-row
+                        mt: 10px
+
+                        +mq-md
+                            mt: 0px
+
+                        &__
+                            &list
+                                d: flex
+                                ai: center
+                                mb: 20px
+
+                                +mq-md
+                                    ml: 26px
+                                    mb: 0px
+
+                            &link
+                                d: inline-flex
+                                ai: center
+                                jc: center
+                                ta: center
+                                text-decoration: none
+                                bg-color: var(--theme-accent-blue)
+                                color: white
+                                w: 96px
+                                h: 28px
+                                br-radius: 3px
+                                tr: .3s
+
+                                @media (hover: hover) and (pointer: fine)
+                                    &:hover
+                                        bg-color: var(--theme-accent-light-blue)
+                            
+                            &select
+                                ml: 8px
+                                cursor: pointer
+                                appearance: none
+                                w: 33px
+                                h: 28px
+                                br-radius: 3px
+                                br: none
+                                outline: none
+                                tr: .3s
+
+                                @media (hover: hover) and (pointer: fine)
+                                    &:hover
+                                        bg-color: var(--theme-accent-light-blue)
+
+                                &--variant
+                                    background: url('../../public/img/arrow-down.png') no-repeat center #4094ef
+                                
+                                &--more
+                                    background: url('../../public/img/dots.png') no-repeat center transparent
+                            
+                .bottom-info
+                    ml: -85px
+                    mt: 0
+
+                    +mq-sm
+                        ml: 0
+                        mt: 25px
+
+                    .stats-info
+                        d: flex
+                        ai: center
+
+                        &__
+                            &item
+                                mr: 40px
+                            
+                            &number
+                                fw: 500
+                    
+                    .description
+                        mt: 21px
+                        &__
+                            &name
+                                mt: 10px
+                                fw: 500
+
+                            &desc
+                                +mq-md
+                                    pr: 50px
+                                
+                                +mq-lg
+                                    pr: 140px
+                                
+                                +mq-xl
+                                    pr: 300px
+                            
+                            &link
+                                mt: 5px
+                                color: var(--theme-accent-dark-blue)
+    
+    .stories
+        mt: 26px
+        pa: 0px 15px
+
+        +mq-sm
+            mt: 35px
+            pa: 0px 20px
+    
+        +mq-lg  
+            mt: 56px
+            pa: 0px 30px
+
+
+        .stories-block
+            d: flex
+            flex-wrap: wrap
+            &__
+                &story-wrapper
+                    d: flex
+                    flex-direction: column
+                    ai: center
+                    pos: relative
+                    w: 48px
+                    h: 48px
+                    br-radius: 50%
+                    mr: 10px
+
+                   
+
+                    +mq-sm
+                        w: 66px
+                        h: 66px
+                        mr: 30px
+                
+                    +mq-lg  
+                        w: 78px
+                        h: 78px
+                        mr: 55px
+
+                    &::before
+                        content: ""
+                        pos: absolute
+                        top: -3px
+                        left: -3px
+                        w: 54px
+                        h: 54px
+                        br: 2px solid var(--theme-accent-light-grey)
+                        br-radius: 50%
+
+                        +mq-sm
+                            w: 71px
+                            h: 71px
+                
+                        +mq-lg  
+                            w: 84px
+                            h: 84px
+
+                
+                &name
+                    mt: 11px
+                    fw: 500
+                    fs: $type-font-size-2xs
+
+                    +mq-sm
+                        fs: $type-font-size-sm

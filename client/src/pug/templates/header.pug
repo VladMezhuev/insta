@@ -1,0 +1,27 @@
+include ./../mixins/index
+
+header.header
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+        +b.header-menu
+            +e.logo-wrapper.A(href="#")
+                +e.img.IMG(alt=("LOGO") , title=("LOGO") src=('../public/img/logo.svg'))
+            +e.form.FORM
+                +e.input.INPUT(type=("search") placeholder=("Search"))
+            +e.navigation
+                +e.list.UL 
+                    +e.item.LI 
+                        +e.link.A(href=('#'))
+                            +e.img.IMG(alt=("HOME"), title=("HOME") src=('../public/icons/home.svg'))
+                    +e.item--message.LI 
+                        +e.link.A(href=('#'))
+                            +e.img.IMG(alt=("DIRECT"), title=("DIRECT") src=('../public/icons/direct.svg'))
+                    +e.item.LI 
+                        +e.link.A(href=('#'))
+                            +e.img.IMG(alt=("COMPASS"), title=("COMPASS") src=('../public/icons/compass.svg'))
+                    +e.item.LI 
+                        +e.link.A(href=('#'))
+                            +e.img.IMG(alt=("HEART"), title=("HEART") src=('../public/icons/heart.svg'))
+
+                    +e.item.LI 
+                        +e.link.A(href=('#'))
+                            +e.img.IMG(alt=("ELLIPSE"), title=("ELLIPSE") src=('../public/icons/Ellipse 37.svg'))

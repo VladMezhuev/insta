@@ -1,0 +1,70 @@
+.galery
+    .galery-menu
+        d: flex
+        jc: center
+        ai: center
+        br-top: 1px solid #DBDBDB
+       
+
+        .menu-item
+            pos: relative
+            d: flex
+            ai: center
+            mt: 18px
+            mb: 18px
+            ml: 60px
+            cursor: pointer
+            tr: .3s
+
+            &::before
+                    content: ""
+                    pos: absolute
+                    top: -19px
+                    left: 0
+                    w: 100%
+                    h: 1px
+                    bg-color: #DBDBDB
+                    tr: .3s
+
+            &--active
+                &::before
+                    bg-color: #262626
+                .menu-item
+                    &__
+                        &name
+                            color: var(--theme-text-1)
+
+            
+
+                
+
+            &:first-child
+                ml: 0px
+
+            &__
+                &image-wrapper
+                    w: 11px
+                    h: 11px
+                    mr: 7px
+                
+                &name
+                    fw: bold
+                    fs: 12px
+                    line-height: 15px
+                    color: #8F8F8F
+                    letter-spacing: 0.09em
+
+            @media (hover: hover) and (pointer: fine)
+                &:hover
+                    &::before
+                        bg-color: #262626
+
+                    .menu-item
+                        
+                        &__
+                            &name
+                                color: var(--theme-text-1)
+                  
+                        
+
+                    

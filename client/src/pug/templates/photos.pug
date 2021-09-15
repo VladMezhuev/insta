@@ -1,0 +1,28 @@
+include ./../mixins/index
+
+section.galery
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+        +b.galery-menu 
+            +b.menu-item.--active
+                +e.image-wrapper 
+                    +e.image.img.IMG(src=("../public/img/grid.png"))
+                +e.name.SPAN POSTS
+            +b.menu-item
+                +e.image-wrapper 
+                    +e.image.img.IMG(src=("../public/img/persone.png"))
+                +e.name.SPAN TAGGED
+
+
+        +b.photos.g-cell.g-cols.g-cols--12
+            +b.d-cell
+                +b.g-row.g-row--appearance_spaced
+                    - for (var x = 0; x < 12; x++)
+                        +b.image-wrapper.g-cell.g-cols.g-cols--12.g-cols--4-xs 
+                            +b.img.d-cell.IMG(src=('../public/img/main-image.png'))
+                    
+
+
+
+
+
+        

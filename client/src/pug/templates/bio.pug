@@ -1,0 +1,98 @@
+include ./../mixins/index
+
+section.persone 
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+        //- +b.g-cell.g-cols.g-cols--12 
+        //-     +b.bio.d-cell 
+        //-         +b.g-row.g-row--appearence_spaced 
+        //-             +b.g-cell.g-cols.g-cols--12
+        //-                 +b.d-cell
+        //-                     +b.g-row.g-row--appearance_spaced
+        //-                         +b.bio-side.g-cell.g-cols.g-cols--3-xs.g-cols--4-sm
+        //-                             +e.image-wrapper.d-cell 
+        //-                                 +e.image.IMG(src=('../public/img/main-image.png'))
+                    
+        //-                         +b.bio-content.g-cell.g-cols.g-cols--9-xs.g-cols--8-sm
+        //-                             +b.bio-header 
+        //-                                 +e.name.d-cell.SPAN name 
+        //-                                 +e.follow.button.d-cell.A(href=('#')) follow 
+        //-                                 +e.open.button.d-cell.A(href=('#')) ... 
+        //-                                 +e.name.button.d-cell.A(href=('#')) open 
+        //-                             +b.bio-stats 
+        //-                                 +e.posts.stats.d-cell.A(href=('#')) 79 posts 
+        //-                                 +e.followers.statsd-cell.A(href=('#')) 379 followers
+        //-                                 +e.following.stats.d-cell.A(href=('#')) 179 following
+        //-                             +b.bio-nickname 
+        //-                                 +e.nickname.d-cell.SPAN name 
+        //-                             +b.bio-description.g-cols.g-cols--12.g-cols--8-xs 
+        //-                                 +e.description.d-cell.P Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+        //-                             +b.bio-link 
+        //-                                 +e.link.d-cell.A(href=("#")) bit.ly/35Ce3mX 
+        //-     +b.d-cell
+        //-         +b.g-row.g-row--appearence_spaced 
+        //-             +b.bio.g-cell.g-cols.g-cols--12
+        //-                 +b.d-cell
+        //-                     +b.g-row.g-row--appearance_spaced
+        //-                         +b.bio-side.g-cell.g-cols.g-cols--3-xs.g-cols.g-cols--2-md.g-cols--1-lg
+        //-                             +e.image-wrapper.d-cell 
+        //-                                 +e.image.IMG(src=('../public/img/main-image.png'))
+        //-                                 +e.name.SPAN Name
+        //-                         +b.bio-side.g-cell.g-cols.g-cols--3-xs.g-cols.g-cols--2-md.g-cols--1-lg
+        //-                             +e.image-wrapper.d-cell 
+        //-                                 +e.image.IMG(src=('../public/img/main-image.png'))
+        //-                                 +e.name.SPAN Name
+        //-                         +b.bio-side.g-cell.g-cols.g-cols--3-xs.g-cols.g-cols--2-md.g-cols--1-lg
+        //-                             +e.image-wrapper.d-cell 
+        //-                                 +e.image.IMG(src=('../public/img/main-image.png'))
+        //-                                 +e.name.SPAN Name
+
+
+        +b.bio 
+            +b.header
+                +e.left-side 
+                    +e.avatar-wrapper 
+                        +e.avatar.img.IMG(src=('../public/img/main-image.png'))
+                +e.right-side 
+                    +b.top-info 
+                        +e.nickname.H2 Nickname 
+                        +b.actions-row
+                            +e.list.UL 
+                                +e.item.LI
+                                    +e.link.A(href=("#")) Follow
+                                +e.item.LI
+                                    +e.select.--variant.SELECT(name=("action-select"))
+                                        +e.option.OPTION 
+                                +e.item.LI
+                                    +e.select.--more.SELECT(name=("more-select"))
+                                        +e.option.OPTION
+                    +b.bottom-info 
+                        +b.stats-info 
+                            +e.item
+                                +e.number.SPAN 79
+                                +e.text.SPAN  posts
+                            +e.item
+                                +e.number.SPAN 379
+                                +e.text.SPAN  followers
+                            +e.item
+                                +e.number.SPAN 179
+                                +e.text.SPAN  following
+                        +b.description 
+                            +e.name.SPAN Name 
+                            +e.desc.P Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                            +e.link.A(href=("#")) bit.ly/35Ce3mX
+            +b.stories 
+                +b.stories-block 
+                    +e.story-wrapper 
+                        +e.story-img.img.IMG(src=('../public/img/circle.png'))
+                        +e.name.SPAN Name
+                    +e.story-wrapper 
+                        +e.story-img.img.IMG(src=('../public/img/circle.png'))
+                        +e.name.SPAN Name
+                    +e.story-wrapper 
+                        +e.story-img.img.IMG(src=('../public/img/circle.png'))
+                        +e.name.SPAN Name
+
+
+
+
+        

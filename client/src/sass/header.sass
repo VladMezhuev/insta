@@ -1,0 +1,127 @@
+header 
+    br-bottom: 1px solid #DBDBDB
+    .header-menu
+        h: 53px
+        d: flex
+        ai: center
+        jc: space-between
+        
+
+        &__
+
+            &logo-wrapper
+                w: 104px
+                h: 30px
+
+            &img
+                d: block
+                w: 100%
+                h: 100%
+                object-position: center
+                object-fit: cover
+
+            &form
+                d: none
+
+                +mq-sm
+                    d: block
+                    w: 150px
+                    h: 29px
+                
+                +mq-md
+                    w: 215px
+
+            &input
+                w: 100%
+                h: 100%
+                br: 1px solid var(--theme-accent-light-grey)
+                br-radius: 3px
+                outline: none
+                bg-color: var(--theme-relief-2)
+                pa: 6px
+                bg-image: url('../../public/icons/search.svg')
+                bg-repeat: no-repeat
+                bg-position: 20% 50%
+                fs: var(--type-font-size-sm)
+
+
+                +mq-md
+                    bg-position: 30% 50%
+
+                &::placeholder
+                    ta: center
+                    color: var(--theme-text-2)
+                    fh: 17px
+
+
+                &:focus
+                    bg: none
+                    &::placeholder
+                        text-align: left
+
+
+
+            &list
+                d: flex
+                ai: center
+                pa: 0px 10px
+        
+            &item
+                pos: relative
+                ml: 10px
+                tr: .3s
+                
+
+                &:before
+                    content: ""
+                    display: block
+                    opacity: 0
+                    pos: absolute
+                    bottom: -5px
+                    left: 0
+                    right: 0
+                    w: 100%
+                    h: 1px
+                    bg-color: black
+                    tr: .3s
+
+                @media (hover: hover) and (pointer: fine)
+                    &:hover
+                        &:before
+                            opacity: 1
+                        
+
+                
+
+                &--message::after
+                    content: "5"
+                    pos: absolute
+                    top: -30%
+                    right: -30%
+                    w: 18px
+                    h: 18px
+                    pt: 2px
+                    color: white
+                    text-align: center
+                    fs: 12px
+                    bg-color: #DC565B
+                    br-radius: 50%
+
+                
+
+                &:first-child
+                    ml: 0
+
+                +mq-md
+                    ml: 23px
+
+                @media (hover: hover) and (pointer: fine)
+                    &:hover
+                        transform: translateY(-5px)
+
+
+
+            &link
+                cursor: poiner
+                w: 22px
+                h: 22px
